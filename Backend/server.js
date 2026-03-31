@@ -17,9 +17,14 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://hospital-website-green.vercel.app",
+];
+
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://hospital-website-green.vercel.app"],
+    origin: allowedOrigins,
     credentials: true,
   })
 );
