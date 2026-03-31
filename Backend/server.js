@@ -19,7 +19,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://hospital-website-green.vercel.app",
+  "https://hospital-website-pdhvbi7ht-chaturbhuj-joshis-projects.vercel.app/",
 ];
 
 app.use(
